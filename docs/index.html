@@ -16,5 +16,14 @@
     <br>
     <input type="submit" value="Send">
   </form>
+
+  <script>
+    const submitButton = document.querySelector('input[type="submit"]');
+    submitButton.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+      alert("Submission Complete!");
+    });
+  </script>
+
   </body>
 </html>
