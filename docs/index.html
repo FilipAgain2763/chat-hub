@@ -21,7 +21,11 @@
     const submitButton = document.querySelector('input[type="submit"]');
     submitButton.addEventListener('click', function(event) {
       event.preventDefault(); // Prevent the default form submission
-      alert("Submission Complete!");
+      const messageboxValue = document.querySelector('input[name="messagebox"]').value;
+      const usernameValue = document.querySelector('input[name="username"]').value;
+             console.log("Submission Complete!");
+             console.log(messageboxValue);
+             console.log(usernameValue);
     });
   </script>
 
